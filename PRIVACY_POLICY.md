@@ -1,169 +1,111 @@
-# PocketMind AI — Privacy Policy
+# Privacy Policy — PocketMind AI
 
-**Last updated: April 2026**
-**App version: 1.0 and later**
+**Effective date:** June 30, 2026
+**Last updated:** August 21, 2026
 
----
+PocketMind AI ("PocketMind", "we", "us") is an AI-powered personal expense
+tracker. This policy explains what data the app handles, why, and your choices.
+We built PocketMind to be privacy-respecting: there is **no login, no name or
+email required to use the app, no advertising, and no third-party analytics or
+tracking SDKs.**
 
-## 1. Overview
-
-PocketMind AI ("PocketMind", "we", "our", or "us") is a privacy-first personal finance application. This Privacy Policy explains what data we collect, how we use it, and your rights over it.
-
-**Our core commitment:** Your financial data is stored locally on your device. We do not require bank credentials. We do not sell your data to third parties. We do not run advertising.
-
----
-
-## 2. Data We Collect and Where It Is Stored
-
-### 2.1 Data Stored Locally on Your Device Only
-
-The following data is created by you and stored **only on your device** using SQLite (server-side) or device storage (client-side). It never leaves your device except as described in Section 2.2.
-
-| Data type | What it contains | Where stored |
-|---|---|---|
-| Expenses | Date, amount, description, category, source | SQLite on your device / Render server tied to your anonymous ID |
-| Savings Goals | Goal name, target amount, saved amount, contributions, icon, colour, deadline | Device (AsyncStorage via Zustand) |
-| Budget settings | Monthly budget, per-category limits | Device + server (anonymous user record) |
-| Category preferences | Patterns you've taught the app (e.g. "trader joe → Groceries") | Server (anonymous user record) |
-| Streak data | Current streak count, longest streak, last log date | Device (AsyncStorage) |
-| Badge/achievement data | Which badges you've earned, computed from your expense history | Device (AsyncStorage) |
-| Financial Health Score | Computed locally from your expenses + budget. Never transmitted | Device only |
-| Notification settings | Your preferences for alerts (on/off, daily prompt time) | Device (AsyncStorage) |
-
-### 2.2 Data Sent to Third-Party Services
-
-The following data is sent to third-party services **only when you use specific features**, and is **processed but not retained** by those services:
-
-| Feature | Data sent | Service | Retention |
-|---|---|---|---|
-| AI text parsing ("Type" mode) | Your typed expense description | OpenAI API | Not stored per OpenAI's API data policy |
-| Voice transcription | Your audio recording | OpenAI Whisper API | Not stored per OpenAI's API data policy |
-| Receipt scanning | Your receipt photo (JPEG) | OpenAI Vision API | Not stored per OpenAI's API data policy |
-| AI Advisor chat | Your question + anonymised expense summary | OpenAI API | Not stored per OpenAI's API data policy |
-| AI Summary | Anonymised expense list | OpenAI API | Not stored per OpenAI's API data policy |
-| Subscription detection | Anonymised expense list | OpenAI API | Not stored per OpenAI's API data policy |
-
-**We do not send:** your name, email, phone number, bank details, location, device identifiers, or any information that could directly identify you to OpenAI or any other third party.
-
-For OpenAI's data handling practices, see: https://openai.com/policies/api-data-usage-policies
-
-### 2.3 Anonymous User Identifier
-
-When you first launch PocketMind, a random UUID is generated and stored locally. This ID is used to associate your expense records on our server (hosted on Render.com). It is:
-- Not linked to your name, email, Apple ID, or any identity
-- Not shared with advertising networks
-- Used solely to retrieve your own data
+If you have any questions, contact us at **nkazi09@gmail.com**.
 
 ---
 
-## 3. Push Notifications (Added in v1.0)
+## 1. Who we are
+PocketMind AI is provided by an independent developer (publisher account
+"nkazi09"). For privacy questions or requests, email **nkazi09@gmail.com**.
 
-PocketMind may send you local push notifications for the following purposes:
+## 2. Information we handle
 
-| Notification type | Trigger | Can be disabled |
-|---|---|---|
-| Budget warning (80% used) | You reach 80% of your monthly budget | Yes — Settings → Notifications |
-| Over-budget alert | You exceed your monthly budget | Yes — Settings → Notifications |
-| Weekly spending recap | Every Sunday at 8pm | Yes — Settings → Notifications |
-| Lapsed logging reminder | You haven't logged an expense in 2+ days | Yes — Settings → Notifications |
-| Goal milestone | You reach 25%, 50%, 75%, or 100% of a savings goal | Yes — Settings → Notifications |
-| Subscription reminder | A known subscription is due within 3 days | Yes — Settings → Notifications |
-| Daily prompt (optional) | Time you choose in Settings | Disabled by default |
+**Information you provide / create in the app**
+- **Expense and budget data** — amounts, categories, descriptions, dates,
+  monthly budgets, savings goals, recurring subscriptions, and warranty/return
+  items you record.
+- **Content you submit for AI processing** — text you type, voice recordings you
+  make, and receipt photos you scan, so the app can extract expense details.
 
-**All notifications are generated locally on your device.** No notification content is sent to our servers or any third party. We use `expo-notifications` which schedules notifications natively via iOS APNs and Android FCM — Apple and Google infrastructure handles delivery, but the content originates only from your device.
+**Information generated automatically**
+- **An anonymous account identifier** — when you first open the app we create a
+  random ID so your data can sync if you reinstall. It is **not** linked to your
+  name, email, or any login.
+- **Subscription status** — whether you have an active PocketMind Pro
+  subscription, and related purchase events (see §4).
 
-**Push notification permission:** We request notification permission on first launch. You can revoke it at any time in iOS Settings → PocketMind → Notifications.
+**Device permissions** (only used for the stated feature, when you choose it)
+- **Microphone** — to record a voice note you want turned into an expense.
+- **Camera / Photos** — to capture or select a receipt to scan.
+- **Notifications** — to send budget, warranty, and savings reminders.
 
----
+**We do not collect:** your name, email address, password, phone number,
+contacts, precise or coarse location, browsing/search history, or advertising
+identifiers. We do not show ads and we do not use third-party analytics or
+tracking.
 
-## 4. Savings Goals Data
+## 3. How we use your information
+We use the information above only to provide and improve the app's features:
+- parse your text, voice, and receipts into structured expenses;
+- show budgets, summaries, insights, savings goals, warranty reminders, and
+  AI advisor responses;
+- sync your data to your device if you reinstall;
+- manage your PocketMind Pro subscription and referrals.
 
-Savings Goals (introduced in v1.0) — including goal names, target amounts, saved amounts, and contributions — are stored **exclusively on your device** in AsyncStorage. This data:
-- Is never transmitted to our server
-- Is never shared with OpenAI or any third party
-- Is included in your CSV export if you choose to export
-- Is deleted when you use "Delete all my data" in Settings
+We do **not** sell your personal information, and we do **not** use it for
+advertising or cross-app tracking.
 
----
+## 4. Third-party services (processors)
+We share the minimum data needed with the following providers, who process it on
+our behalf:
 
-## 5. Streak and Achievement Data
+- **OpenAI** — when you use AI features, the relevant text, voice recording, or
+  receipt image is sent to OpenAI's API to extract expense details. This content
+  is processed to return a result and is not used to train OpenAI's models under
+  their API terms.
+- **RevenueCat** — manages subscription entitlements. It receives your anonymous
+  account identifier and subscription events (purchase, renewal, expiration).
+- **Apple App Store / Google Play** — process subscription payments. We never
+  receive your full payment card details.
+- **Render** — hosts our backend and database (United States), where your
+  expense data is stored so it can sync to your device.
 
-Your streak count, badge history, and Financial Health Score are computed entirely on-device from your local expense data. This data:
-- Never leaves your device
-- Is not shared with any third party
-- Is reset if you use "Delete all my data" in Settings
+## 5. Storage, security, and location
+Your data is stored on your device and on our backend servers (hosted in the
+United States). All data transmitted between the app, our backend, and the
+services above is encrypted in transit using HTTPS/TLS. No method of storage or
+transmission is 100% secure, but we take reasonable measures to protect your
+information.
 
----
+## 6. Data retention and deletion
+We keep your data until you delete it.
+- **In the app:** *Settings → Delete account & all data* permanently deletes
+  your data from our servers and from your device in one step. This cannot be
+  undone.
+- **Alternative:** you can also request deletion by emailing
+  **nkazi09@gmail.com**.
+- Deleting your account does not cancel an active App Store or Google Play
+  subscription — manage or cancel that separately in your device's
+  subscription settings.
 
-## 6. Camera and Microphone Access
+## 7. Your rights
+Depending on where you live (e.g., under GDPR or the CCPA/CPRA), you may have the
+right to access, correct, delete, or restrict processing of your information, and
+to data portability. Because the app does not require an account, the simplest
+way to exercise these rights is to use *Delete account & all data* in the app or
+to email us at **nkazi09@gmail.com**. We do not sell or "share" personal
+information as those terms are defined under U.S. state privacy laws.
 
-PocketMind requests the following device permissions only when you use the relevant features:
+## 8. Children's privacy
+PocketMind is not directed to children under 13 (or under 16 in the EEA/UK), and
+we do not knowingly collect personal information from them. If you believe a
+child has provided us information, contact us and we will delete it.
 
-- **Camera** (`NSCameraUsageDescription`): Used only when you tap "Take photo" in receipt scanning mode. Photos are processed once by OpenAI Vision and are never stored on our servers.
-- **Microphone** (`NSMicrophoneUsageDescription`): Used only when you hold the record button in voice entry mode. Audio is sent to OpenAI Whisper for transcription and is never stored on our servers.
-- **Photo Library** (`NSPhotoLibraryUsageDescription`): Used only when you choose "Choose from gallery" in receipt scanning mode.
+## 9. Changes to this policy
+We may update this policy from time to time. We will revise the "Last updated"
+date above and, for material changes, provide notice in the app or store
+listing.
 
-You can revoke any permission at any time in iOS Settings → PocketMind.
-
----
-
-## 7. Data Retention and Deletion
-
-- **On your device:** All data persists until you delete the app or use "Delete all my data" in Settings → Your Data.
-- **On our server:** Your anonymous expense records are retained until you request deletion. To delete server-side data, use "Delete all my data" in the app, or email us at nkazi09@gmail.com with your anonymous User ID (visible in Settings → About).
-- **OpenAI:** Audio and image data sent for processing is subject to OpenAI's API data retention policy. Per OpenAI's published API policy, API inputs and outputs are not used to train models and are retained for a limited period for abuse monitoring only.
-
----
-
-## 8. Children's Privacy
-
-PocketMind is not directed at children under 13. We do not knowingly collect data from children under 13. If you believe a child has used this app, please contact us at nkazi09@gmail.com.
-
----
-
-## 9. Security
-
-- All communication with our backend uses HTTPS (TLS)
-- Your anonymous user ID and expense data are not accessible to other users
-- We do not store payment information of any kind
-- The app does not connect to your bank accounts
-
----
-
-## 10. Third-Party Services Summary
-
-| Service | Purpose | Privacy policy |
-|---|---|---|
-| OpenAI | AI parsing, voice transcription, receipt OCR, advisor chat | https://openai.com/policies/privacy-policy |
-| Render.com | Backend hosting (anonymous expense storage) | https://render.com/privacy |
-| Expo / React Native | App framework | https://expo.dev/privacy |
-| Apple APNs | Push notification delivery (iOS) | https://www.apple.com/legal/privacy/ |
-
----
-
-## 11. Your Rights
-
-You have the right to:
-- **Access** your data — export it as CSV from Settings → Your Data
-- **Delete** your data — use "Delete all my data" in Settings, or email us
-- **Opt out** of any notification type — Settings → Notifications
-- **Withdraw camera/microphone consent** — iOS Settings → PocketMind
-
----
-
-## 12. Changes to This Policy
-
-If we make material changes to this policy (e.g. adding new data collection), we will update the "Last updated" date and notify you via an in-app message on next launch.
+## 10. Contact
+Questions or requests: **nkazi09@gmail.com**
 
 ---
-
-## 13. Contact
-
-Questions about this Privacy Policy:
-
-**Email:** nkazi09@gmail.com
-**Support:** https://github.com/nkazi09/Privacy-Policy-PocketMind
-
----
-
-*PocketMind AI is an independent application. It is not affiliated with, endorsed by, or connected to any financial institution.*
