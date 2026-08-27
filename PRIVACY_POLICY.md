@@ -1,7 +1,7 @@
 # Privacy Policy — PocketMind AI
 
 **Effective date:** June 30, 2026
-**Last updated:** August 21, 2026
+**Last updated:** August 26, 2026
 
 PocketMind AI ("PocketMind", "we", "us") is an AI-powered personal expense
 tracker. This policy explains what data the app handles, why, and your choices.
@@ -36,7 +36,6 @@ PocketMind AI is provided by an independent developer (publisher account
 **Device permissions** (only used for the stated feature, when you choose it)
 - **Microphone** — to record a voice note you want turned into an expense.
 - **Camera / Photos** — to capture or select a receipt to scan.
-- **Notifications** — to send budget, warranty, and savings reminders.
 
 **We do not collect:** your name, email address, password, phone number,
 contacts, precise or coarse location, browsing/search history, or advertising
@@ -46,7 +45,7 @@ tracking.
 ## 3. How we use your information
 We use the information above only to provide and improve the app's features:
 - parse your text, voice, and receipts into structured expenses;
-- show budgets, summaries, insights, savings goals, warranty reminders, and
+- show budgets, summaries, insights, savings goals, in-app warranty reminders, and
   AI advisor responses;
 - sync your data to your device if you reinstall;
 - manage your PocketMind Pro subscription and referrals.
@@ -107,5 +106,3 @@ listing.
 
 ## 10. Contact
 Questions or requests: **nkazi09@gmail.com**
-
----
