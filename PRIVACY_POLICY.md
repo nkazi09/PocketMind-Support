@@ -24,12 +24,14 @@ PocketMind AI is provided by an independent developer (publisher account
   monthly budgets, category limits, recurring subscriptions, and warranty/return
   items you record. These are stored on our servers so they are available each
   time you open the app.
-- **Savings goals** — stored **only on your device**. They are never sent to our
-  servers.
+- **Savings goals** — stored **only on your device**, never on our servers. When
+  you ask the AI Advisor a question, your goals are sent with it so the answer
+  can take them into account; they are used for that answer and not kept.
 - **Content you submit for AI processing** — text you type, voice recordings you
-  make, and receipt photos you scan, so the app can extract expense details.
-  When you use the AI Advisor or the AI Summary, your expense history is also
-  processed to produce the answer (see §4).
+  make, receipt photos you scan, and questions you ask the AI Advisor, so the
+  app can extract expense details and answer you. When you use the AI Advisor
+  or the AI Summary, your expense history is also processed to produce the
+  answer (see §4).
 
 **Information generated automatically**
 - **An anonymous account identifier** — when you first open the app we create a
@@ -81,8 +83,10 @@ our behalf:
 
 - **OpenAI** — when you use AI features, the relevant text, voice recording, or
   receipt image is sent to OpenAI's API to extract expense details. When you use
-  the AI Advisor or the AI Summary, the expenses needed to answer (such as dates,
-  categories, amounts and descriptions) are sent as well. This content is
+  the AI Summary, the expenses needed to answer (such as dates, categories,
+  amounts and descriptions) are sent as well. When you ask the AI Advisor, your
+  question and recent conversation are sent along with your expenses, budgets,
+  category limits, savings goals and warranty items. This content is
   processed to return a result and is not used to train OpenAI's models under
   their API terms; OpenAI may retain API inputs for a limited period to monitor
   for abuse, as described in its API data-usage policy.
