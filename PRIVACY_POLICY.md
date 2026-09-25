@@ -1,7 +1,7 @@
 # Privacy Policy — PocketMind AI
 
 **Effective date:** June 30, 2026
-**Last updated:** September 22, 2026
+**Last updated:** September 25, 2026
 
 PocketMind AI ("PocketMind", "we", "us") is an AI-powered personal expense
 tracker. This policy explains what data the app handles, why, and your choices.
@@ -39,8 +39,9 @@ PocketMind AI is provided by an independent developer (publisher account
   is **not** linked to your name, email, or any login. It is stored only on your
   device: **if you delete the app, a new identifier is created when you next
   install it, and your previous data can no longer be reached from the app.** To
-  remove your data, use *Delete account & all data* **before** deleting the app
-  (see §6).
+  remove your data straight away, use *Delete account & all data* **before**
+  deleting the app. Otherwise it is deleted automatically once 6 months have
+  passed since you last opened the app (see §6).
 - **A device identifier, used only for the referral program** — if you redeem a
   referral code, we store a one-way hash of your device's app-vendor identifier
   (Apple's identifierForVendor, or the Android ID). It is used solely so that
@@ -108,7 +109,23 @@ transmission is 100% secure, but we take reasonable measures to protect your
 information.
 
 ## 6. Data retention and deletion
-We keep your data until you delete it.
+We keep your data until you delete it, or until your account has been inactive
+for 6 months, whichever comes first.
+- **Inactive accounts:** if the app is not opened for **6 months**, we
+  automatically and permanently delete your account and all of its data from our
+  servers — the same data removed by *Delete account & all data*. Opening the app
+  at any time resets this. If you have an **active PocketMind Pro subscription**,
+  your account is not deleted for inactivity while the subscription is active;
+  once it ends, the 6 months are counted from when you last opened the app. If
+  you open the app after your account was deleted, the app tells you, clears
+  the old data kept on your phone (including savings goals), and starts a new,
+  empty account; your previous data cannot be recovered. We keep only a one-way hash of the deleted
+  account's identifier, so the app can tell you this happened; it cannot be used
+  to identify you or restore your data.
+- **Temporary service data:** usage counters for the free plan, cached copies of
+  your AI Summary, and records used to avoid repeating the same budget alert are
+  deleted automatically after a few weeks to a few months, as they are only
+  needed for the current week or month.
 - **In the app:** *Settings → Delete account & all data* permanently deletes
   your account and your data from our servers and from your device in one step.
   This cannot be undone.
@@ -119,9 +136,10 @@ We keep your data until you delete it.
   you.
 - **Delete your account before deleting the app.** Because the app has no login,
   once the app is deleted we have no way to connect you to your previous data,
-  and you can no longer delete it from the app. If this has already happened,
-  email **nkazi09@gmail.com** with the User ID shown in *Settings* if you noted
-  it, and we will do our best to help.
+  and you can no longer delete it from the app. It will then be deleted
+  automatically 6 months after you last opened the app. If you want it removed
+  sooner, email **nkazi09@gmail.com** with the User ID shown in *Settings* if
+  you noted it, and we will do our best to help.
 - **Alternative:** you can also request deletion by emailing
   **nkazi09@gmail.com**.
 - Deleting your account does not cancel an active App Store or Google Play
